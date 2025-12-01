@@ -1,0 +1,15 @@
+str1 = input("Enter a string: ")
+c = 0
+n = 0
+
+for i in str1:
+    if i.isalpha():
+        c += 1
+    if i.isnumeric():
+        n += 1
+
+if c >= 1:
+    print("String has at least one letter")
+
+if n >= 1:
+    print("String has at least one number")
