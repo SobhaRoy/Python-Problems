@@ -1,0 +1,7 @@
+str1 = input("Enter a string: ")
+l = str1.split()
+
+for i in l:
+    p = len(i)
+    if p % 2 == 0:
+        print(i)
