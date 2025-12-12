@@ -1,0 +1,17 @@
+l = [1, 2, 3, 4, 5]
+k = 3
+
+def avg(lst):
+    return sum(lst) / len(lst)
+
+def variance(lst):
+    x = avg(lst)
+    return sum((i - x) ** 2 for i in lst) / len(lst)
+
+ans = []
+for i in range(len(l) - k + 1):
+    a = avg(l[i:i+k])
+    v = variance(l[i:i+k])
+    ans.append((a, v))
+
+print(ans)
